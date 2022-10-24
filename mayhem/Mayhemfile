@@ -1,0 +1,12 @@
+# Namespaced project name that the target belongs to
+project: nitro
+
+# Target name (should be unique within the project)
+target: nitro
+
+# List of commands used to test the target
+cmds:
+
+    # Command used to start the target, "@@" is the input file
+    # (when "@@" is omitted Mayhem defaults to stdin inputs)
+    - cmd: ./fuzz.libfuzzer
